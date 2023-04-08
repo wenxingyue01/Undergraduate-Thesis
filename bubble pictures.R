@@ -1,0 +1,40 @@
+library(igraph)
+disabubbleuser=as.matrix(disabubbleuser)
+gbubble1=graph.empty(n=41,directed=F)
+windows(width=400,height=360)
+plot(gbubble1,
+     vertex.size=3*disabubbleuser[,2],     
+     vertex.shape='circle',    
+     vertex.color=disabubbleuser[,3],
+     vertex.label.cex=1,   
+     vertex.label.color='black')    
+
+illbubbleuser=as.matrix(illbubbleuser)
+gbubble2=graph.empty(n=31,directed=F)
+windows(width=400,height=360)
+plot(gbubble2,
+     vertex.size=5*illbubbleuser[,2],     
+     vertex.shape='circle',    
+     vertex.color=illbubbleuser[,3],
+     vertex.label.cex=1,    
+     vertex.label.color='black')      
+
+itembubbleuser=as.matrix(itembubbleuser)
+gbubble3=graph.empty(n=28,directed=F)
+windows(width=400,height=360)
+plot(gbubble3,
+     vertex.size=5*itembubbleuser[,2],     
+     vertex.shape='circle',    
+     vertex.color=itembubbleuser[,3],
+     vertex.label.cex=1,    
+     vertex.label.color='black') 
+
+entertainmentbubbleuser=as.matrix(entertainmentbubbleuser)
+gbubble4=graph.empty(n=35,directed=F)
+windows(width=400,height=360)
+plot(gbubble4,
+     vertex.size=5*entertainmentbubbleuser[,2],     
+     vertex.shape='circle',   
+     vertex.color=entertainmentbubbleuser[,3],
+     vertex.label.cex=1,    
+     vertex.label.color='black') 
